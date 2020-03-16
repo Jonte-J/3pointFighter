@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fighters.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Stage.tscn" type="PackedScene" id=2]
+[ext_resource path="res://projectile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://test.tscn" type="PackedScene" id=4]
+
+[node name="Base" type="Node2D"]
+
+[node name="scenes" type="Node2D" parent="."]
+
+[node name="Fighters" parent="scenes" instance=ExtResource( 1 )]
+editor/display_folded = true
+z_index = 1
+
+[node name="Fighter1" parent="scenes/Fighters" index="0"]
+editor/display_folded = true
+
+[node name="Fighter2" parent="scenes/Fighters" index="1"]
+editor/display_folded = true
+
+[node name="Stage" parent="scenes" instance=ExtResource( 2 )]
+
+[node name="projectile" parent="scenes" instance=ExtResource( 3 )]
+position = Vector2( 145.953, 180.451 )
+
+[node name="test" parent="scenes" instance=ExtResource( 4 )]
+position = Vector2( 96.3707, 4.19003 )
+
+[editable path="scenes/Fighters"]

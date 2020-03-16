@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://texture/mapp/ForgottenDungeon.png" type="Texture" id=1]
+[ext_resource path="res://texture/light/light.png" type="Texture" id=2]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
+
+[sub_resource type="TileSet" id=2]
+0/name = "ForgottenDungeon.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 96, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "ForgottenDungeon.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": true,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+
+[sub_resource type="OccluderPolygon2D" id=3]
+polygon = PoolVector2Array( 991.857, 0.108763, 1023.98, 0.108763, 1024.96, 608.103, 0.279099, 608.823, 0.279099, 608.823, -0.00346756, -0.344525, 32.1484, -0.199042, 32.0576, 575.849, 991.912, 575.828 )
+
+[node name="Stage" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 8
+collision_use_kinematic = true
+format = 1
+tile_data = PoolIntArray( 0, -536870911, 0, 31, -1073741823, 0, 65536, -536870911, 0, 65567, -1073741823, 0, 131072, -536870911, 0, 131103, -1073741823, 0, 196608, -536870911, 0, 196639, -1073741823, 0, 262144, -536870911, 0, 262175, -1073741823, 0, 327680, -536870911, 0, 327711, -1073741823, 0, 393216, -536870911, 0, 393247, -1073741823, 0, 458752, -536870911, 0, 458783, -1073741823, 0, 524288, -536870911, 0, 524319, -1073741823, 0, 589824, -536870911, 0, 589855, -1073741823, 0, 655360, -536870911, 0, 655391, -1073741823, 0, 720896, -536870911, 0, 720927, -1073741823, 0, 786432, -536870911, 0, 786463, -1073741823, 0, 851968, -536870911, 0, 851999, -1073741823, 0, 917504, -536870911, 0, 917535, -1073741823, 0, 983040, -1610612735, 0, 983071, -2147483647, 0, 1048576, -1610612735, 0, 1048607, -2147483647, 0, 1114112, -1610612735, 0, 1114143, -2147483647, 0, 1179648, 1, 0, 1179649, 1, 0, 1179650, 1, 0, 1179651, 1, 0, 1179652, 1, 0, 1179653, 1, 0, 1179654, 1, 0, 1179655, 1, 0, 1179656, 1, 0, 1179657, 1, 0, 1179658, 1, 0, 1179659, 1, 0, 1179660, 1, 0, 1179661, 1, 0, 1179662, 1, 0, 1179663, 1, 0, 1179664, 1, 0, 1179665, 1, 0, 1179666, 1, 0, 1179667, 1, 0, 1179668, 1, 0, 1179669, 1, 0, 1179670, 1, 0, 1179671, 1, 0, 1179672, 1, 0, 1179673, 1, 0, 1179674, 1, 0, 1179675, 1, 0, 1179676, 1, 0, 1179677, 1, 0, 1179678, 1, 0, 1179679, 1, 0 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource( 3 )
+
+[node name="Light2D" type="Light2D" parent="."]
+visible = false
+position = Vector2( 624.807, 230.907 )
+scale = Vector2( 3.25644, 2.10065 )
+texture = ExtResource( 2 )
