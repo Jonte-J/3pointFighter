@@ -21,6 +21,7 @@ func _physics_process(delta):
 		motion.x = 0
 		
 	
+	
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
 			motion.y = -285
