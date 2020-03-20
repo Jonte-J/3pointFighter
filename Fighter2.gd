@@ -4,7 +4,7 @@ extends KinematicBody2D
 const UP = Vector2(0, -1)
 var motion = Vector2()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	motion.y += 10
 	
 	if Input.is_action_pressed("ui_right2"):

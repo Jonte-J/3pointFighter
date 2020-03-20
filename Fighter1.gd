@@ -8,7 +8,7 @@ func _ready():
     print(self.get_path())
 func _on_AnimationPlayer_ready():
 	pass
-func _physics_process(delta):
+func _physics_process(_delta):
 	motion.y += 10
 	
 	if Input.is_action_pressed("ui_right"):
