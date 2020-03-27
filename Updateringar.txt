@@ -1,2 +1,3 @@
 ﻿2020-03-20	De har blivit mest att fixa så att allt funka med godot på datorn, har ju flyttat över allt från laptopen.
 2020-03-27      Jag har suttit och läst hur man ska få hitboxes och hurtboxes att bara komma fram under en viss frame av en animation, jag tror att jag har fått allt att funka på min stationära dator.
+Fixat nya animationer för att dem gamla var inte så bra.
