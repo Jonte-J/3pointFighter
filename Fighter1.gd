@@ -13,10 +13,12 @@ func _physics_process(_delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		motion.x = 130
-		animation.play("walkR") 
+		animation.play("walkR")
+#		$Sprite.play("walkR")
 	elif Input.is_action_pressed("ui_left"):
 		motion.x = -130
 		animation.play("walkL")
+#		$Sprite.play("walkL")
 	else:
 		motion.x = 0
 		

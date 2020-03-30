@@ -22,7 +22,7 @@ editor/display_folded = true
 [node name="Stage" parent="scenes" instance=ExtResource( 2 )]
 
 [node name="projectile" parent="scenes" instance=ExtResource( 3 )]
-position = Vector2( 145.953, 180.451 )
+position = Vector2( 147.091, 179.882 )
 
 [node name="test" parent="scenes" instance=ExtResource( 4 )]
 position = Vector2( 96.3707, 4.19003 )
