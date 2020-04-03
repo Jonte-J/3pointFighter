@@ -4,3 +4,4 @@ Fixat nya animationer för att dem gamla var inte så bra.
 Målat ett monster åt Dennis.
 Jag hatar AnimationFrames men jag har spenderat för mycke tid för att byta från dem nu.
 AnimationFrames är inte kul att jobba med
+Du vet när man han börjat jobba med något och det funkar inte men du har spenderat så mycke tid på att försöka göra det så att de inte är värt att sluta för då har man bara slösat sin tid. Yea de är AnimationFramesen här för mig.
